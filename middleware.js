@@ -23,11 +23,13 @@ app.use('/user/:id',(req,res,next)=>{
     next();
 })
 
-
+//route middleware
 app.get('/user/:id',(req,res,next)=>{
     console.log('URL of middleware2 : ',req.originalUrl);
     next();
 })
+
+
 
 
 app.get('/',(req,res)=>{
